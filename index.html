@@ -1,49 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Outforce Technologies</title>
-    <style>
-  body {
-    background-color: #000;
-    color: #fff;
-    font-family: sans-serif;
-    line-height: 1.6;
-    padding: 2rem;
-  }
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Outforce Technologies</title>
+		<style>
+			  body {
+			    background-color: #000;
+			    color: #fff;
+			    font-family: sans-serif;
+			    line-height: 1.6;
+			    padding: 2rem;
+			  }
 
- /*  h1 {
-    color: #e50914; /* red */
- /*  } */
+			 /*  h1 {
+			    color: #e50914; /* red */
+			 /*  } */
 
-  a {
-    color: #e50914;
-    text-decoration: none;
-  }
-      
-  a:hover {
-    text-decoration: underline;
-  }
+			  a {
+			    color: #e50914;
+			    text-decoration: none;
+			  }
 
-  p {
-    max-width: 800px;
-    margin-bottom: 1.2rem;
-  }
-</style>
+			  a:hover {
+			    text-decoration: underline;
+			  }
 
-  </head>
-  <body>
-    <main>
-  <h1>Welcome to <span style="color:#e50914">Outforce Technologies</span></h1>
-  <p>Based in <span style="color:#e50914">Munich</span>, Outforce Technologies is your trusted partner for high-level <span style="color:#e50914">SAP consulting and development services</span>. Founded by seasoned and certified SAP consultants, we bring deep expertise and a results-driven mindset to every project.</p>
+			  p {
+			    max-width: 800px;
+			    margin-bottom: 1.2rem;
+			  }
 
-  <p>Whether you're looking to strengthen your SAP team with experienced professionals, accelerate your transformation with <span style="color:#e50914">SAP S/4HANA</span>, harness the power of <span style="color:#e50914">SAP BTP</span>, or explore emerging technologies like <span style="color:#e50914">AI in the SAP ecosystem</span> — we’re here to deliver.</p>
+			  #lang-switcher {
+			    text-align: right;
+			    margin-bottom: 2rem;
+			  }
+			  button {
+			      background: none;
+			      border: 1px solid #e50914;
+			      color: #fff;
+			      padding: 0.3rem 0.8rem;
+			      margin-left: 0.5rem;
+			      cursor: pointer;
+			    }
+			    button:hover {
+			      background-color: #e50914;
+			      color: #000;
+			    }
+			   button img {
+			  margin-right: 6px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="lang-switcher">
+			<button onclick="setLanguage('en')"><img src="https://flagcdn.com/16x12/gb.png" alt="English" style="vertical-align: middle;" /> EN</button>
+			<button onclick="setLanguage('de')"><img src="https://flagcdn.com/16x12/de.png" alt="Deutsch" style="vertical-align: middle;" /> DE</button>
+		</div>
+		<main>
+			<!-- English content -->
+			<div id="content-en">
+				<h1>Welcome to <span style="color:#e50914">Outforce Technologies</span></h1>
+				<p>
+					Based in <span style="color:#e50914">Munich</span>, Outforce Technologies is your trusted partner for high-level <span style="color:#e50914">SAP consulting and development services</span>. Founded by seasoned and
+					certified SAP consultants, we bring deep expertise and a results-driven mindset to every project.
+				</p>
 
-  <p>We support clients both onsite across Germany and remotely within all European time zones. If you’re looking for reliable experts who understand the pace of change in today’s SAP landscape and know how to deliver real value — let’s talk.</p>
+				<p>
+					Whether you're looking to strengthen your SAP team with experienced professionals, accelerate your transformation with <span style="color:#e50914">SAP S/4HANA</span>, harness the power of
+					<span style="color:#e50914">SAP BTP</span>, or explore emerging technologies like <span style="color:#e50914">AI in the SAP ecosystem</span> — we’re here to deliver.
+				</p>
 
-  <p>📩 Contact us: <a href="mailto:utku.turan@outforce.tech">utku.turan@outforce.tech</a></p>
-</main>
+				<p>
+					We support clients both onsite across Germany and remotely within all European time zones. If you’re looking for reliable experts who understand the pace of change in today’s SAP landscape and know how to deliver real
+					value — let’s talk.
+				</p>
 
-  </body>
+				<p>📩 Contact us: <a href="mailto:utku.turan@outforce.tech">utku.turan@outforce.tech</a></p>
+			</div>
+			<!-- German content -->
+			<div id="content-de" style="display: none;">
+				<h1>Willkommen bei <span style="color:#e50914">Outforce Technologies</span></h1>
+				<p>
+					Mit Sitz in <span style="color:#e50914">München</span> ist Outforce Technologies Ihr vertrauenswürdiger Partner für hochwertige <span style="color:#e50914">SAP-Beratung und Entwicklungsdienstleistungen</span>. Gegründet
+					von einem erfahrenen und zertifizierten SAP-Berater bringen wir tiefgehendes Fachwissen und eine ergebnisorientierte Denkweise in jedes Projekt ein.
+				</p>
+
+				<p>
+					Ob Sie Ihr SAP-Team mit erfahrenen Fachleuten verstärken, Ihre Transformation mit <span style="color:#e50914">SAP S/4HANA</span> beschleunigen, das Potenzial von <span style="color:#e50914">SAP BTP</span> nutzen oder
+					neue Technologien wie <span style="color:#e50914">KI im SAP-Umfeld</span> erkunden möchten – wir liefern Ergebnisse.
+				</p>
+
+				<p>
+					Wir unterstützen Kunden sowohl vor Ort in ganz Deutschland als auch remote in allen europäischen Zeitzonen. Wenn Sie nach zuverlässigen Experten suchen, die den Wandel in der SAP-Landschaft verstehen und echten Mehrwert
+					bieten – lassen Sie uns sprechen.
+				</p>
+
+				<p>📩 Kontaktieren Sie uns: <a href="mailto:utku.turan@outforce.tech">utku.turan@outforce.tech</a></p>
+			</div>
+		</main>
+		<script>
+			function setLanguage(lang) {
+			  document.getElementById('content-en').style.display = (lang === 'en') ? 'block' : 'none';
+			  document.getElementById('content-de').style.display = (lang === 'de') ? 'block' : 'none';
+			}
+
+			window.addEventListener('DOMContentLoaded', () => {
+			  const userLang = navigator.language || navigator.userLanguage;
+			  if (userLang.startsWith('de')) {
+			    setLanguage('de');
+			  } else {
+			    setLanguage('en');
+			  }
+			});
+		</script>
+	</body>
 </html>
